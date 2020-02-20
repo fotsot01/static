@@ -2,9 +2,11 @@ pipeline {
       agent any 
       stages {
             stage('Lint HTML') {
-                  stepps {
+                  steps {
                         sh 'echo "Linting step"'
                   }
+            }
+                  
           stage('Upload TO AWS NOW') {
               steps {
                    sh 'echo "Hello World"'
@@ -19,7 +21,7 @@ pipeline {
                            s3Upload(file:'index.html', bucket:'jenkins2020', path:'index.html')
                           }
 
-                    
+              
                             
                             
                            
