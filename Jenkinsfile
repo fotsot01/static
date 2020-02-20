@@ -10,9 +10,9 @@ pipeline {
                      withAWS(region:'us-east-1',credentials:'aws-static') {
                            sh 'echo "Uploading content"'
                             s3Upload(file:'index.html', bucket:"Jenkins2020")
+                            '''
                        }
                        
-                       '''
                    
                    }
                   }
