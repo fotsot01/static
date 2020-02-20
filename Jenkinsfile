@@ -1,7 +1,7 @@
 pipeline {
       agent any 
       stages {
-            stage('Lint HTML NOW') {
+            stage('Lint HTML TO NOW') {
                   steps {
                         sh 'echo "Linting BABE"'
                   }
