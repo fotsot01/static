@@ -11,7 +11,7 @@ pipeline {
                            sh 'echo "Uploading content"'
                             s3Upload(file:'index.html', bucket:'Jenkins2020')
                        }
-                   '''
+                   
                    }
                   }
                  }
