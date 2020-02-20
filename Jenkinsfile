@@ -1,7 +1,7 @@
 pipeline {
       agent any 
       stages {
-          stage('Upload TO manger danger AWS') {
+          stage('Upload TO AWS') {
               steps   {
                    sh 'echo "Hello World"'
                    sh '''
@@ -11,6 +11,8 @@ pipeline {
                            sh 'echo "Uploading content"'
                             s3Upload(file:'index.html', bucket:"Jenkins2020")
                        }
+                       
+                       '''
                    
                    }
                   }
