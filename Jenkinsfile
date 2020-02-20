@@ -3,7 +3,7 @@ pipeline {
       stages {
             stage('Lint HTML') {
                   steps {
-                        sh 'echo "Linting step"'
+                        sh 'echo "Linting step NOW"'
                   }
             }
                   
